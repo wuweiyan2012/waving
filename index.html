@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="waving.js"></script>
+</head>
+
+<style>
+    .btn
+    {
+        position: relative;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #0086ff;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 18px;
+        color:white;
+        border:0px!important;
+        overflow: hidden;
+    }
+</style>
+<body>
+
+
+<div>
+    <button class="btn">测试<span>asdfas</span></button>
+    <button class="btn">测试1</button>
+</div>
+
+<script type="text/javascript">
+//    new Waving(document.querySelector(".btn"), { duration: 1000, shade: 0.2 });
+    new Waving(document.getElementsByClassName("btn"), { duration: 1000, shade: 0.2 });
+</script>
+
+</body>
+</html>
